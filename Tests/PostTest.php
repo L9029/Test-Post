@@ -20,9 +20,9 @@ class PostTest extends TestCase{
         $post->addComment($comment);
 
         //Assert if the post was created
-        $this->assertEquials(1, $post->countComments());
+        $this->assertEquals(1, $post->countComments());
         //Assert if the instance is from the Comment class
-        $this->assertInstanceOf(Comment::class, $post->getComments());
+        $this->assertInstanceOf(Comment::class, $post->getComments()[0]);
     }
 }
 
