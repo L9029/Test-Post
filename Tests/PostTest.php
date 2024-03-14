@@ -10,6 +10,8 @@ use App\Comment;
 //Creating the Test class for the Post class
 class PostTest extends TestCase{
 
+    //Test add_content_to_post
+
     //This method validate if the comment object is an instance from the class Comment
     public function test_add_comment_to_post(){
         //Create the instance for the class Post and Comment
