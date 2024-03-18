@@ -29,7 +29,9 @@ class PostTest extends TestCase{
     public function test_set_category(){
         $post = new Post();
         $category = new Category();
+        $category->setCategory("Tests");
 
+        $this->assertIsString($category->getCategory());
         $this->assertInstanceOf(Category::class, $post->setCategory($category));
     }
 

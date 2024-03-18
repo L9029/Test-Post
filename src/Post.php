@@ -29,7 +29,7 @@ class Post{
         $this->category = $category;
         $this->content = $content;
 
-        return $this->category;
+        return [$this->title, $this->category, $this->content];
     }
 
     //the parameter Comment in the function validate that the comment var has to be the Comment type
