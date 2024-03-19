@@ -25,10 +25,6 @@ class Post{
 
     //Get all the content of the post with all the caracteristics
     public function getContent(){
-        $this->title = $title;
-        $this->category = $category;
-        $this->content = $content;
-
         return [$this->title, $this->category, $this->content];
     }
 
